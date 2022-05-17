@@ -1,0 +1,121 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+:root{
+    --primary: #00ced1;
+    --secondary: #95989a;
+    --text-color: #808080;
+    --text-secondary: #000;
+    --text-tertiary: #696969;
+}
+
+#areaContainer {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/JobInHouse.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#areaText h2,
+#areaText .dataEvento{
+ color: var(--primary);
+}
+
+#areaText h2{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#areaText .descricaoEvento{
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#areaText p {
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+
+#areaText .dataEvento{
+    font-weight: bold;
+}
+
+#areaCadastro {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+    border-radius: 20px;
+}
+
+#areaCadastro p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.areaFormulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.areaFormulario label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.areaFormulario input,
+.areaFormulario select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/* MOBILE */
+@media (max-width: 450px){
+    #areaContainer {
+        flex-direction: column;
+        height: auto;
+    }
+    #areaTexto {
+        padding: 2em;
+    }
+    #areaTexto h2{
+        margin-bottom: .5em;
+    }
+    #areaCadastro {
+        max-width: 90%;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+}
